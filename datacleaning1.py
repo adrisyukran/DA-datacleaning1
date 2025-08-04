@@ -28,4 +28,7 @@ df['product_category_tree'] = df['product_category_tree'].apply(clear)
 # Display product category tree
 # print(df['product_category_tree'][4])
 
+# Export cleaned DataFrame to csv
+df.to_csv('ecom-testdata_cleaned.csv', index=False)
+print("Cleaned data saved to 'ecom-testdata_cleaned.csv'")
 
